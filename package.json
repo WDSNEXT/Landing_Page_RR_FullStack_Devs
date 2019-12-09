@@ -1,0 +1,25 @@
+{
+  "name": "landing_page_rr_fullstack_devs",
+  "version": "1.0.0",
+  "description": "Comunidade Roraimense de Devs FullStack - Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WDSNEXT/Landing_Page_RR_FullStack_Devs.git"
+  },
+  "keywords": [
+    "RR",
+    "Devs",
+    "FullStack",
+    "Comunidade"
+  ],
+  "author": "WDSNEXT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WDSNEXT/Landing_Page_RR_FullStack_Devs/issues"
+  },
+  "homepage": "https://github.com/WDSNEXT/Landing_Page_RR_FullStack_Devs#readme"
+}
