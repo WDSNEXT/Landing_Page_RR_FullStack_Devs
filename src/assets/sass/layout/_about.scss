@@ -34,6 +34,7 @@
 
   &__description {
     font-size: 1.5rem;
+    animation-name: slideUp;
     animation-duration: 1s;
     animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
     animation-fill-mode: both;
