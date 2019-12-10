@@ -13,7 +13,7 @@
     "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' dist/assets/css/style.comp.css -o dist/assets/css/style.prefix.css",
     "compress:css": "node-sass dist/assets/css/style.prefix.css dist/assets/css/style.min.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
-    "build:html": "html-minifier --case-sensitive --decode-entities --sort-attributes --sort-class-name --remove-empty-elements --collapse-whitespace --collapse-boolean-attributes --remove-comments --remove-redundant-attributes --remove-script-type-attributes --remove-empty-attributes --minify-css true --minify-js true --input-dir src/ --output-dir dist/ --file-ext html",
+    "build:html": "html-minifier --case-sensitive --decode-entities --sort-attributes --sort-class-name --collapse-whitespace --collapse-boolean-attributes --remove-comments --remove-redundant-attributes --remove-script-type-attributes --remove-empty-attributes --minify-css true --minify-js true --input-dir src/ --output-dir dist/ --file-ext html",
     "build:assets": "sync-glob --watch 'src/assets/img/*' dist/assets/img/",
     "build:all": "npm-run-all build:css build:html build:assets"
   },
