@@ -11,8 +11,8 @@
   }
 
   @media #{$small-and-up} {
-    justify-content: space-around;
     justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 4rem;
   }
