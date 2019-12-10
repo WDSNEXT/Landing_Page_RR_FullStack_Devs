@@ -1,0 +1,17 @@
+.side {
+  max-height: 20rem;
+  max-width: 20rem;
+
+  @media #{$small-and-down} {
+    margin-bottom: 3rem;
+  }
+
+  @media #{$small-and-up} {
+    flex-grow: 0;
+    flex-shrink: 0;
+    order: 2;
+    height: 20rem;
+    width: 20rem;
+    margin-left: 4rem;
+  }
+}
