@@ -1,0 +1,35 @@
+.picture {
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+
+  &__shadow,
+  &__image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  &__shadow {
+    border-radius: 170397px;
+    background: radial-gradient($color-black 0%, rgba($color-black, 0)) 70%;
+    position: absolute;
+    top: 10%;
+    animation-name: picShadow;
+    animation-duration: 750ms;
+    animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
+    animation-fill-mode: both;
+    animation-delay: 500ms;
+  }
+
+  &__image {
+    position: relative;
+    animation-name: picImage;
+    animation-duration: 750ms;
+    animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
+    animation-fill-mode: both;
+    animation-delay: 500ms;
+  }
+}
