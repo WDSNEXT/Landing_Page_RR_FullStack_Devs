@@ -9,12 +9,45 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand"
     />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <div
       class="wallpaper wallpaper--filter"
       style="background-image: url('/assets/img/background@3x.jpg');background-size: cover;background-position: center;"
-    >&nbsp;</div>
+    >
+      &nbsp;
+    </div>
+
+    <div class="content">
+      <aside class="side">
+        <picture class="picture">
+          <!-- DESCOMENTE SE FOR USAR IMAGEM EM JPG OU PNG -->
+          <!-- <div class="picture__shadow">&nbsp;</div> -->
+          <!-- <img
+            src="assets/img/background@3x.jpg"
+            alt="Roraima FullStack Devs Logo"
+            srcset="
+              assets/img/background@1x.jpg 1x,
+              assets/img/background@2x.jpg 2x,
+              assets/img/background@3x.jpg 3x
+            "
+            width="320"
+            height="320"
+          /> -->
+
+          <svg
+            class="picture__image"
+            image-rendering="optimizeQuality"
+            shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision"
+            role="img"
+            aria-label="Roraima FullStack Devs"
+          >
+            <use xlink:href="assets/img/sprite.svg#logo" />
+          </svg>
+        </picture>
+      </aside>
+    </div>
   </body>
 </html>
