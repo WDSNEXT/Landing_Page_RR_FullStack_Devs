@@ -10,3 +10,10 @@ $color-black: #000;
 // FONT SETTINGS
 $font-stack: "Quicksand", sans-serif;
 $default-font-size: 16px;
+
+// MEDIA QUERY RANGES
+$small-screen-down: 799px;
+$small-screen-up: 800px;
+
+$small-and-down: "only screen and (max-width: #{small-screen-down})";
+$small-and-up: "only screen and (min-width: #{small-screen-up})";
