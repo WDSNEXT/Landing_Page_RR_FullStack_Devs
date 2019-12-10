@@ -3,14 +3,14 @@
   position: relative;
   min-height: 100vh;
 
-  @media #{small-screen-down} {
+  @media #{$small-and-down} {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5rem 3rem;
   }
 
-  @media #{small-and-up} {
+  @media #{$small-and-up} {
     justify-content: space-around;
     justify-content: space-between;
     align-items: center;
