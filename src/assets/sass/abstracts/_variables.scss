@@ -15,5 +15,5 @@ $default-font-size: 16px;
 $small-screen-down: 799px;
 $small-screen-up: 800px;
 
-$small-and-down: "only screen and (max-width: #{small-screen-down})";
-$small-and-up: "only screen and (min-width: #{small-screen-up})";
+$small-and-down: "only screen and (max-width: #{$small-screen-down})";
+$small-and-up: "only screen and (min-width: #{$small-screen-up})";
