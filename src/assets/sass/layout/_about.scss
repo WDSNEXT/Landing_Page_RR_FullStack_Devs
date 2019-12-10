@@ -1,0 +1,120 @@
+.about {
+  max-width: 26rem;
+
+  @media #{$small-and-up} {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  &__name {
+    font-size: 2.25rem;
+    line-height: 1.125;
+    margin-bottom: 0.5rem;
+
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0,1);
+    animation-fill-mode: both;
+    animation-delay: 100ms;
+  }
+
+  &__job {
+    font-family: $font-stack-2;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #FFE479;
+    font-size: 0.75rem;
+
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+    animation-fill-mode: both;
+    animation-delay: 200ms;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+    animation-fill-mode: both;
+    animation-delay: 400ms;
+  }
+
+  &__contact {
+    display: inline-block;
+    margin-top: 1.5rem;
+    vertical-align: top;
+
+    animation-name: bounceIn;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+    animation-fill-mode: both;
+    animation-delay: 600ms;
+  }
+
+  &__social-icons {
+    display: flex;
+    margin-top: 1.5rem;
+
+    li {
+      height: 2rem;
+      width: 2rem;
+      margin-right: 0.5rem;
+      text-align: center;
+
+      animation-name: slideUp;
+      animation-duration: 500ms;
+      animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
+      animation-fill-mode: both;
+
+      &:nth-child(1) {
+        animation-delay: 800ms;
+      }
+
+      &:nth-child(2) {
+        animation-delay: 900ms;
+      }
+
+      &:nth-child(3) {
+        animation-delay: 1s;
+      }
+
+      &:nth-child(4) {
+        animation-delay: 1.1s;
+      }
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2rem;
+      width: 2rem;
+      font-size: 1.5rem;
+      color: $color-white;
+      opacity: 0.5;
+
+      cursor: pointer;
+      text-decoration: none;
+      transform-origin: center;
+      transition-duration: 100ms;
+      transition-property: opacity, transform;
+      will-change: opacity, transform;
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.25);
+      }
+
+      &:active {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+
+      svg {
+        height: 1em;
+        overflow: hidden;
+      }
+    }
+  }
+}
