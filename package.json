@@ -7,15 +7,17 @@
     "watch:sass": "node-sass src/assets/sass/style.scss dist/assets/css/style.css -w",
     "watch:html": "sync-glob --watch --delete false 'src/*.html' dist",
     "watch:assets": "sync-glob --watch 'src/assets/img/*' dist/assets/img/",
+    "watch:favicons": "sync-glob --watch 'src/*.png' dist/",
     "devserver": "browser-sync start --no-inject-changes --watch --server 'dist/' --file 'dist/**/*' 'src/**/*'",
-    "start": "npm-run-all --parallel build:all watch:html watch:assets watch:sass devserver",
+    "start": "npm-run-all --parallel build:all watch:html watch:favicons watch:assets watch:sass devserver",
     "compile:sass": "node-sass src/assets/sass/style.scss dist/assets/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' dist/assets/css/style.comp.css -o dist/assets/css/style.prefix.css",
     "compress:css": "node-sass dist/assets/css/style.prefix.css dist/assets/css/style.min.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
     "build:html": "html-minifier --case-sensitive --decode-entities --sort-attributes --sort-class-name --collapse-whitespace --collapse-boolean-attributes --remove-comments --remove-redundant-attributes --remove-script-type-attributes --remove-empty-attributes --minify-css true --minify-js true --input-dir src/ --output-dir dist/ --file-ext html",
-    "build:assets": "sync-glob --watch 'src/assets/img/*' dist/assets/img/",
-    "build:all": "npm-run-all build:css build:html build:assets"
+    "build:assets": "sync-glob 'src/assets/img/*' dist/assets/img/",
+    "build:favicons": "sync-glob 'src/*.png' dist/",
+    "build:all": "npm-run-all build:favicons build:assets build:html build:css"
   },
   "repository": {
     "type": "git",
