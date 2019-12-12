@@ -116,6 +116,8 @@
         height: 1em;
         overflow: hidden;
       }
+
+      @include no-user-select
     }
   }
 }
