@@ -74,6 +74,16 @@ Abra o projeto no seu editor de codigo preferido. Uma dica para quem usa Visual 
 - `dist/` Sera gerada pelo script de build: `npm run build` e contera o projeto final pronto pra producao.
 - `node-modules/` Pasta que contem todas as dependencias do projeto. Caso apague e so instalar novamente `npm install`
 
+Lembre-se ao estar de desenvolvimento localmente o projeto troque a seguinte linha de codigo:
+
+```html
+<link rel="stylesheet" href="assets/css/style.css" />
+```
+No final com o projeto em producao coloque a versao minificada do css:
+```html
+<link rel="stylesheet" href="assets/css/style.min.css" />
+```
+
 ## Personalizando o Gradiente
 
 Primeiramente abra o aquivos `_variables.scss` localizado em `/src/assets/sass/abstracts/_variables.scss`:
